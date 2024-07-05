@@ -4,7 +4,7 @@
     "containerDefinitions": [
       {
         "name": "my-php-app",
-        "image": "public.ecr.aws/s1r0f815/my-php-app:my_php_app",
+        "image": "public.ecr.aws/s1r0f8i5/my-php-app:latest",
         "essential": true,
         "memory": 512,
         "cpu": 256,
