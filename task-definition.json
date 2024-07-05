@@ -1,0 +1,27 @@
+{
+    "family": "my-php-app-task",
+    "networkMode": "awsvpc",
+    "containerDefinitions": [
+      {
+        "name": "my-php-app",
+        "image": "public.ecr.aws/s1r0f815/my-php-app:my_php_app",
+        "essential": true,
+        "memory": 512,
+        "cpu": 256,
+        "portMappings": [
+          {
+            "containerPort": 80,
+            "hostPort": 80,
+            "protocol": "tcp"
+          }
+        ]
+      }
+    ],
+    "requiresCompatibilities": [
+      "FARGATE"
+    ],
+    "cpu": "256",
+    "memory": "512",
+    "executionRoleArn": "arn:aws:iam::596037671736:role/JBargotio",
+    "taskRoleArn": "arn:aws:iam::596037671736:role/JBargotio"
+  }
